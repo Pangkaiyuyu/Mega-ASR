@@ -216,16 +216,13 @@ For example, replace `/path/to/Qwen3-ASR` with the actual local path of your Qwe
 
 Mega-ASR provides two inference modes for different usage scenarios.
 
-| Mode | Description | Script |
-|---|---|---|
-| **Dirty Audio Inference** | Designed for challenging dirty speech scenarios only. | `src_MegaASR/inference/inference_MegaASR_for_dirty.py` |
-| **General Audio Inference** | Supports both dirty speech and general audio with routing. | `src_MegaASR/inference/inference_MegaASR_for_all.py` |
+
 
 ### 1. Inference for Dirty Audio
 
-**Use case:** This mode is designed for degraded or hard-to-recognize speech, such as noisy, far-field, distorted, or mixed-interference audio.
+This mode is designed for degraded or hard-to-recognize speech, such as noisy, far-field, distorted, or mixed-interference audio.
 
-**Script:** `src_MegaASR/inference/inference_MegaASR_for_dirty.py`
+
 
 ```bash
 python src_MegaASR/inference/inference_MegaASR_for_dirty.py \
@@ -235,9 +232,9 @@ python src_MegaASR/inference/inference_MegaASR_for_dirty.py \
 
 ### 2. Inference for General Audio
 
-**Use case:** This mode supports both dirty speech and general audio. It uses a routing mechanism to select the appropriate recognition path automatically.
+This mode supports both dirty speech and general audio. It uses a routing mechanism to select the appropriate recognition path automatically.
 
-**Script:** `src_MegaASR/inference/inference_MegaASR_for_all.py`
+
 
 ```bash
 python src_MegaASR/inference/inference_MegaASR_for_all.py \
@@ -259,16 +256,12 @@ python eval/evaluate_wer.py \
 
 Mega-ASR supports acoustic robustness adaptation through both supervised fine-tuning and reinforcement learning based optimization.
 
-| Training Stage | Description | Status |
-|---|---|---|
-| **SFT-LoRA Training** | Supervised fine-tuning for adapting the model to complex dirty speech scenarios. | Available |
-| **DAPO-LoRA Training** | Reinforcement learning based robustness optimization after SFT-LoRA. | Coming soon |
+
 
 ### 1. SFT-LoRA Training
 
-**Purpose:** SFT-LoRA is used to adapt Mega-ASR to complex dirty speech scenarios with supervised training data.
+SFT-LoRA is used to adapt Mega-ASR to complex dirty speech scenarios with supervised training data.
 
-**Directory:** `src_MegaASR/train/SFT_lora/`
 
 ```bash
 python src_MegaASR/train/SFT_lora/SFT_lora.py \
@@ -277,9 +270,8 @@ python src_MegaASR/train/SFT_lora/SFT_lora.py \
 
 ### 2. DAPO-LoRA Training
 
-**Purpose:** DAPO-LoRA is designed for reinforcement learning based robustness optimization after supervised fine-tuning.
+DAPO-LoRA is designed for reinforcement learning based robustness optimization after supervised fine-tuning.
 
-**Status:** Coming soon.
 
 The DAPO-LoRA training module is under active research and will be released in a future update.
 
