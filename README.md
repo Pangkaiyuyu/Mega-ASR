@@ -56,7 +56,7 @@ The following examples compare Mega-ASR with several representative ASR systems 
 🎧 [Listen to audio](assets/case_study/empty_output_recovery.wav)
 
 | Model | WER | Transcript |
-|---|---:|---|
+|---|---|---|
 | Ground Truth | Reference | "...and said to him let us go and eat some honey. Whose honey? inquired Kobay cautiously. My father's, Soongoora replied. Oh, all right, I'm with you, said the tortoise eagerly, and away they went." |
 | **Mega-ASR (Ours)** | ✅ <mark><b>47.1</b></mark> | <b>"He said to him let's go and eat some honey. It's honey? he inquired very cautiously. My father is Superabundant — oh, all right, I will, he said to her eagerly, and away they went."</b> |
 | Qwen3-ASR | 🔴 **100.0** | <i>&lt;empty&gt;</i> |
