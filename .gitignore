@@ -30,9 +30,6 @@ checkpoints/
 
 # Data and audio files
 datasets/
-*.wav
-*.flac
-*.mp3
 
 # Private files
 .env
